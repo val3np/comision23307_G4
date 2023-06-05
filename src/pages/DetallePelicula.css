@@ -1,0 +1,112 @@
+.contenedorDetalle{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.col{
+    margin: 35px 35px 50px 20px;
+    height: auto;
+    width: 250px;
+    border-radius:15px ;
+}
+
+.peliculaDetalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.item{
+    margin:0 0 40px 0;
+    text-align: center;
+}
+
+.contenedorParrafos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.contenedorBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnEntradas{
+    position: relative;
+    right: 80px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 5px 5px 8px 5px;
+    color: #fff;
+    background-color: #7F5C3C;
+    text-decoration: none;
+    text-align: center;
+}
+@media (max-width: 1000px){
+    .peliculaDetalle{
+        width: 85%;
+    }
+
+    p{
+        margin-right: 0;
+    }
+
+    .btnEntradas{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .col{
+        margin: 15px 0 20px 0;
+    }
+
+    .peliculaDetalle{
+        width: 80%;
+    }
+
+    .item{
+        margin-bottom: 22px;
+    }
+
+    p{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .contenedorBtn{
+        margin-top: 15px;
+    }
+
+    .btnEntradas{
+        right: 0;
+    }
+}
+
+@media (max-width: 680px){
+    .col{
+        margin: 15px 0 20px 0;
+    }
+
+    p{
+        margin-left: 10px;
+    }
+
+    .btnEntradas{
+        right: 10px;
+    }
+}

@@ -1,0 +1,173 @@
+.contactoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.formContenedorEntrada{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.formLabelEntrada{
+    width: 100%;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.formInputEntrada{
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.formTextAreaEntrada{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin: 0 0 10px 0;
+    resize:none;
+    background-color: #fff;
+}
+.position{
+    display: flex;
+    flex-direction: column;
+}
+
+.positionTittle{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.positionContainer{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.positionIzq{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 12px;
+    justify-content: center;
+}
+
+.positionDer{
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.cuadrado{
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cuadrado:hover{
+    background-color: #ff0;
+}
+
+
+.amountContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+.amount{
+    margin: 0;
+    color: #fff;
+    width: 70%;
+    font-size: 19px;
+    text-align: end;
+}
+
+.contenedorBtn{
+    display: flex;
+}
+
+.btnComprar{
+    padding: 8px 15px;
+    width: 92px;
+    background-color: #7F5C3C;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btnComprar:hover{
+    background-color: aqua;
+    color: #000;
+}
+
+@media(max-width: 1200px){
+    .formContenedorEntrada{
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .formInputEntrada{
+        width: 100%;
+    }
+
+    .formTextAreaEntrada{
+        width: 100%;
+    }
+}
+
+@media(max-width: 680px){
+    .formContenedorEntrada{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
+
+@media(max-width: 360px){
+    .formContenedorEntrada{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}
