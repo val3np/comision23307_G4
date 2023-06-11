@@ -48,8 +48,8 @@ export const CandyCard = () =>{
                 <img src={candy.imagen} alt={candy.name} className='candyImagen'/>
                 <p className='candyName'>{candy.name}</p>
             </div>
-            <div className='btnContainer' onClick={addProduct}>
-                <button className='btnPrice'>${candy.unitPrice}</button>
+            <div className='btnContainer'>
+                <button className='btnPrice' onClick={addProduct}>${candy.unitPrice}</button>
             </div>
         </div>))}
         </>
