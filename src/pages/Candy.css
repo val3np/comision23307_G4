@@ -1,0 +1,91 @@
+.titlePag{
+    color: #b0dafe;
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+.candysGrid{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cartContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.shoppingCardContainer{
+    width: 66%;  
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.contenido{
+    color: #000;
+    width: 100%;
+    background-color: transparent;
+    
+}
+
+.vacio{
+    text-align: center;
+}
+
+hr{
+    background-color: #000;
+    height: 2px;
+}
+
+.total{
+    text-align: end;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.vaciarContainer{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btnVaciar{
+    background-color: #7F5C3C;
+    border: none;
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnVaciar:hover{
+    background-color: #b2906f;
+}
+
+@media(max-width:1000px){
+    .candysGrid{
+        grid-template-columns: repeat(2,300px);
+    }
+
+    .shoppingCardContainer{
+        width: 90%;
+    }
+}
+
+@media(max-width:750px){
+    .candysGrid{
+        grid-template-columns: 100% ;
+    }
+
+    .shoppingCardContainer{
+        width: 90%;
+    }
+}

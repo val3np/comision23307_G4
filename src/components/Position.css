@@ -1,0 +1,48 @@
+.position{
+    display: flex;
+    flex-direction: column;
+}
+
+.positionTittle{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.positionContainer{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.positionIzq{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 12px;
+    justify-content: center;
+}
+
+.positionDer{
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.cuadrado{
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cuadrado:hover{
+    background-color: #ff0;
+}

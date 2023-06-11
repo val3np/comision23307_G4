@@ -11,6 +11,8 @@ export const DetallePelicula=()=>{
     const [tittle,setTittle] = useState("")
     const [overview,setOverview] = useState("")
     const [genres,setGenres] = useState("")
+    const [trailer,setTrailer] = useState("");
+    
 
     const {peliculaId} = useParams()
 
@@ -21,6 +23,7 @@ export const DetallePelicula=()=>{
           setTittle(peliculaDoc.data().tittle);
           setGenres(peliculaDoc.data().genres);
           setOverview(peliculaDoc.data().overview);
+          setTrailer(peliculaDoc.data().trailer);
         } else {
           console.log("La película no existe");
         }
@@ -41,9 +44,9 @@ export const DetallePelicula=()=>{
                               <p><strong>Overview: </strong>{overview}</p>
                               <p><strong>Generos: </strong>{genres}</p>
                             </div>
-                            <div className="contenedorBtn">
-                                <Link to={`/entradas/${peliculaId}`} className="btnEntradas">Entradas</Link>
-                            </div>
+                            {/* <div className="contenedorBtn">
+                                <Link to={`/trailer/${peliculaId}`} className="btnEntradas">Play Trailer</Link>
+                            </div> */}
                         </div>
                 </div>
                 <Footer/>
@@ -51,3 +54,5 @@ export const DetallePelicula=()=>{
             )
 
 }
+
+//

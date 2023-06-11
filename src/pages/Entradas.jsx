@@ -4,7 +4,7 @@ import {getDoc,getDocs, doc, addDoc, collection} from "firebase/firestore";
 import {db} from '../firebaseConfig/firebase.js';
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import {FaSquare, FaRegSquare} from "react-icons/fa" ;
+import { Position } from "../components/Position.jsx";
 import './Entradas.css';
 
 export const Entradas = () => {
@@ -36,7 +36,6 @@ export const Entradas = () => {
                 }
               };
 
-    
 
     //Para crear el registro en la tabla Entradas
     const entradaCollection = collection(db, "entradas");
@@ -54,9 +53,7 @@ export const Entradas = () => {
             count: Number(count),
             price: Number(price)
         });
-      };
-
-
+      }
     
       useEffect(() => {
         getHorariosById(peliculaId)
@@ -117,45 +114,7 @@ export const Entradas = () => {
                     </div>
                 </div>
 
-                <div className="position">
-                    <h2 className="positionTittle">Select your position</h2>
-                    <div className="positionContainer">
-                        <div className="positionIzq">
-                            <div className="btnContainer">
-                                {position?<FaSquare color="#ff0" size={28}/>:<FaSquare color="#f00" size={28}/>}
-                                </div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                            <div className="btnContainer"><button className="cuadrado"></button></div>
-                        </div>
-                        <div className="positionDer">
-                            <div className="cuadrado" onClick={color}></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                            <div className="cuadrado"></div>
-                        </div>
-                    </div>
-                </div>
+                <Position/>
 
                 <div className="amountContainer">
                     <p className="amount">Total: {price}</p>

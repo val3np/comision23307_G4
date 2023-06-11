@@ -4,7 +4,7 @@ import './Footer.css'
 export const Footer = () => {
     return(
         <footer className="footer">
-            <p>Copyright © <strong id="logo">cineStar</strong></p>
+            <p>Copyright © <strong id="logo">CineStar</strong></p>
             <div className="container-footer-icon">
                 <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
                 <a href="https://es-la.facebook.com/"><i className="fa-brands fa-facebook"></i></a>
