@@ -15,7 +15,7 @@ export const Footer = () => {
                     <Link className="footer_nav_li" to={"/"}>Inicio</Link>
                     <Link className="footer_nav_li" to={"/somos"}>Somos</Link>
                     <Link className="footer_nav_li" to={"/contacto"}>Contacto</Link>
-                    <Link className="footer_nav_li" to={"/entradas"}>Entradas</Link>
+                    <Link className="footer_nav_li" to={"/candy"}>Candy</Link>
                 </ul>
             </nav>
         </footer>

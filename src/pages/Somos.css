@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.titleSomos{
+    color: #b0dafe;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
 
 .cineName{
     font-family: 'Times New Roman', Times, serif;
@@ -12,13 +17,14 @@
 
 .parrafo{
     color: #fff;
-    width: 80%;
+    width: 65%;
     margin: 10px 0;
+    text-align: center;
 }
 
 .imagenCine{
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 251px;
     margin: 30px 0;
     border-radius: 8px;
 }

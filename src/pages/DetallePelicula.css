@@ -40,12 +40,9 @@ p{
 
 .contenedorBtn{
     display: flex;
-    justify-content: flex-end;
 }
 
 .btnEntradas{
-    position: relative;
-    right: 80px;
     width: 100px;
     border: none;
     border-radius: 8px;

@@ -8,19 +8,20 @@ import "./DetallePelicula.css"
 
 export const DetallePelicula=()=>{
     const [poster,setPoster] = useState("")
-    const [tittle,setTittle] = useState("")
+    const [title,setTitle] = useState("")
     const [overview,setOverview] = useState("")
     const [genres,setGenres] = useState("")
     const [trailer,setTrailer] = useState("");
     
-
+//Para obtener el id de la película
     const {peliculaId} = useParams()
 
+//Para obetener la información de las películas
     const getPeliculaById = async (peliculaId) => {
         const peliculaDoc = await getDoc(doc(db, "peliculas", peliculaId));
         if (peliculaDoc.exists()) {
           setPoster(peliculaDoc.data().poster);
-          setTittle(peliculaDoc.data().tittle);
+          setTitle(peliculaDoc.data().title);
           setGenres(peliculaDoc.data().genres);
           setOverview(peliculaDoc.data().overview);
           setTrailer(peliculaDoc.data().trailer);
@@ -37,16 +38,16 @@ export const DetallePelicula=()=>{
             <>
                 <Header/>
                 <div className="contenedorDetalle">
-                        <img className="col" src={poster} alt={tittle} />
+                        <img className="col" src={poster} alt={title} />
                         <div className="peliculaDetalle">
-                            <h2 className="item">{tittle}</h2>
+                            <h2 className="item">{title}</h2>
                             <div className="contenedorParrafos">
                               <p><strong>Overview: </strong>{overview}</p>
                               <p><strong>Generos: </strong>{genres}</p>
                             </div>
-                            {/* <div className="contenedorBtn">
-                                <Link to={`/trailer/${peliculaId}`} className="btnEntradas">Play Trailer</Link>
-                            </div> */}
+                            <div className="contenedorBtn">
+                                <Link to={`/entradas/${peliculaId}`} className="btnEntradas">Entradas</Link>
+                            </div> 
                         </div>
                 </div>
                 <Footer/>

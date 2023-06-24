@@ -5,7 +5,7 @@
 }
 
 
-.tittle{
+.title{
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -73,9 +73,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contenedorBtn{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
-.btnComprar{
+.btnComprar, .btnBorrar{
     padding: 8px 15px;
     width: 92px;
     background-color: #7F5C3C;
@@ -84,10 +87,16 @@ input[type=number]::-webkit-outer-spin-button {
     border: none;
     font-size: 15px;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.btnComprar:hover{
+.btnComprar{
+    margin-left: 10px;
+}
+
+
+
+.btnComprar:hover, .btnBorrar:hover{
     background-color: aqua;
     color: #000;
 }

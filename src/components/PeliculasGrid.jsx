@@ -36,7 +36,7 @@ export const PeliculasGrid=()=>{
     }
     return(
         <>
-            <h2 className="tittleP">Cartelera</h2>
+            <h2 className="titleP">Cartelera</h2>
             <div className="movies">
                 <PeliculasCard/>
             </div>

@@ -26,8 +26,8 @@ export const PeliculasCard = () => {
       <div className="moviesGrid">
         {peliculas.map((pelicula)=>(
         <Link to={`/pelicula/${pelicula.id}`}>
-        <img className="movieImage" src={pelicula.poster} alt={pelicula.tittle} />
-        <div className="movieTittle">{pelicula.tittle}</div>
+        <img className="movieImage" src={pelicula.poster} alt={pelicula.title} />
+        <div className="movieTitle">{pelicula.title}</div>
         </Link>))}
       </div>
     );
