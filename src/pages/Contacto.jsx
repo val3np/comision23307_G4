@@ -45,6 +45,11 @@ export const Contacto  = () => {
                     color: 'white',
                   },
                 });
+                setName("");
+                setLastName("");
+                setEmail("")
+                setCelular("")
+                setTexto("")
                 return
                 }
               }
@@ -111,7 +116,7 @@ export const Contacto  = () => {
 
 
                     <div class="formBtn">
-                        <button type="reset" onClick={borrarContenido} class="btnBorrar">Borrar</button>
+                        <button type="reset" onClick={borrarContenido} class="btnDelete">Borrar</button>
                         <button type="submit" class="btnEnviar">Enviar</button>
                         <ToastContainer />
                     </div>

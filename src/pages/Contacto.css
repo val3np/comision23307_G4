@@ -64,7 +64,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 10px 0 20px 0;
 }
 
-.btnEnviar, .btnBorrar{
+.btnEnviar, .btnDelete{
     padding: 8px 15px;
     background-color: #7F5C3C;
     color: #fff;
@@ -77,9 +77,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btnEnviar{
     margin-left: 15px;
+    padding: 8px 15px;
 }
 
-.btnEnviar:hover, .btnBorrar:hover{
+.btnEnviar:hover, .btnDelete:hover{
     background-color: aqua;
     color: #000;
 }

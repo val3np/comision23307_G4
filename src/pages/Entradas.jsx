@@ -77,7 +77,7 @@ export const Entradas = () => {
               return;
               } else{
                 if (date.length == 0 || date.length === "") {
-                    toast.error('Por favor, ingrese su emailuna fecha')
+                    toast.error('Por favor, ingrese su una fecha')
               }else {
                 Swal.fire({
                     title:'OK',
