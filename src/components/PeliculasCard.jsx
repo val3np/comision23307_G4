@@ -12,7 +12,6 @@ export const PeliculasCard = () => {
     //3 funcion para mostrar todos los docs
     const getPeliculas = async () =>{
     const data = await getDocs(peliculasCollection)
-    console.log(data.docs);  
     setPeliculas(                 //
       data.docs.map((doc)=>({...doc.data(),id:doc.id}))
     )
@@ -26,7 +25,7 @@ export const PeliculasCard = () => {
       <div className="moviesGrid">
         {peliculas.map((pelicula)=>(
         <Link to={`/pelicula/${pelicula.id}`}>
-        <img className="movieImage" src={pelicula.poster} alt={pelicula.title} />
+        <div className="imagen"><img className="movieImage" src={pelicula.poster} alt={pelicula.title} /></div>
         <div className="movieTitle">{pelicula.title}</div>
         </Link>))}
       </div>

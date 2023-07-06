@@ -15,6 +15,21 @@
     margin-bottom: 50px;
 }
 
+
+@media(max-width:1140px){
+    .moviesGrid{
+        display: grid;
+        grid-template-columns: repeat(3,230px);
+    }
+}
+
+@media(max-width:900px){
+    .moviesGrid{
+        display: grid;
+        grid-template-columns: repeat(2,230px);
+    }
+}
+
 @media(max-width:560px){
     .moviesGrid{
         grid-template-columns: 100% ;

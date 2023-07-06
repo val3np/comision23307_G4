@@ -23,9 +23,15 @@ a{
 @media(max-width:560px){
     .moviesGrid{
         grid-template-columns: 100% ;
-    } 
+    }
+
+    .imagen{
+        display: flex;
+        justify-content: center;
+    }
+    
     .movieImage{
-        width: 90%;
+        width: 40%;
         height: auto;
     } 
 }
